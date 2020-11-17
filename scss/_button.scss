@@ -1,0 +1,18 @@
+%btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
+  &hover {
+    transform: scale(0.98);
+  }
+}
+// wrap in lighten or darken to change the color without color picking!
+.btn-primary {
+  @extend %btn;
+  background-color: lighten($primary-color, 10%);
+}
+.btn-secondary {
+  @extend %btn;
+  background-color: $secondary-color;
+}
